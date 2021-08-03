@@ -95,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
         intentbtn6.setOnClickListener(v->{
             Intent intent = new Intent(MainActivity.this,MainActivity3.class);
             startActivityForResult(intent,101);
+            // 要由下一頁將值回傳回來用的
+            // requestCode 是來判斷由那一個頁面回來
+            // 例如 : 呼叫 camra 時 ， requestCode->100
+            // 例如 : 呼叫 MainActivity3 , requestCode -> 101
         });
 
     }
